@@ -1,0 +1,52 @@
+:root{
+
+    /* colors */
+    --brand-color: #20242F;
+
+    /* font */
+  --font-family: "Alata";
+  --font-size: 20px;
+  --font-weight: 400;
+}
+
+body{
+
+    background-color: var(--brand-color);
+}
+
+/* Анимация ЛОГО */
+.logo{
+    animation: logo__anime 5s ease forwards;
+}
+
+/* Keyframes */
+@keyframes logo__anime {
+    0% {
+        transform: translate(525px, 248px);
+    }
+    20% {
+        transform: translate(525px, 248px);
+    }
+    100% {
+        transform: translate(203px, 248px);
+    }
+}
+
+/* Анимация Аковлев */
+.AKOVLEV{
+    animation: AKOVLEV__anime 5s ease forwards;
+}
+
+@keyframes AKOVLEV__anime {
+    0% {
+        transform: translate(0px, 206px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        transform: translate(150px, 206px);
+        opacity: 1;
+    }
+}
