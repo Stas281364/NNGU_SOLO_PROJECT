@@ -14,21 +14,35 @@ body{
     background-color: var(--brand-color);
 }
 
+.container-logo{
+
+    max-width: 1300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* height: 700px; */
+  padding-top: 100px;
+  margin: 0 auto;
+} 
+
+
+
+/* ***************************** */
 /* Анимация ЛОГО */
 .logo{
     animation: logo__anime 5s ease forwards;
 }
 
-/* Keyframes */
+
 @keyframes logo__anime {
     0% {
-        transform: translate(525px, 248px);
+        transform: translate(425px, 0px); /*y:248*/
+        
     }
     20% {
-        transform: translate(525px, 248px);
+        transform: translate(425px, 0px);
     }
     100% {
-        transform: translate(203px, 248px);
+        transform: translate(50px, 0px);
     }
 }
 
@@ -39,14 +53,85 @@ body{
 
 @keyframes AKOVLEV__anime {
     0% {
-        transform: translate(0px, 206px);
+        transform: translate(-60px, 38px);/*y:286*/
         opacity: 0;
     }
     50%{
         opacity: 0;
     }
     100% {
-        transform: translate(150px, 206px);
+        transform: translate(0px, 38px);
         opacity: 1;
     }
 }
+
+/* Анимация GAME */
+.GAME{
+    animation: GAME__anime 5s ease forwards;
+}
+
+@keyframes GAME__anime {
+    0% {
+        transform: translate(0px, 0px); /*y:260*/
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* Анимация sharp */
+.sharp{
+    animation: sharp__anime 6s ease forwards;
+}
+
+@keyframes sharp__anime {
+    0% {
+        transform: translate(30px, 0px);  /*y:260*/
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(30px, 0px);
+    }
+}
+
+/* Анимация DEV */
+
+.DEV{
+    animation: DEV__anime 6s ease forwards;
+}
+
+@keyframes DEV__anime {
+    0% {
+        transform: translate(70px, 0px);  /*y:260*/
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(70px, 0px);
+    }
+}
+/* ***************************** */
+
+.fisrt__line{
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+} 
+
+.second__line{
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+} 
