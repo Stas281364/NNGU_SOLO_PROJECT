@@ -2,16 +2,23 @@
 
     /* colors */
     --brand-color: #20242F;
+    --brand-color2: #B0008B;
+    --brand-color3: #552CDF;
 
     /* font */
-  --font-family: "Alata";
-  --font-size: 20px;
+  --font-family: "Alata", sans-serif;
+  --font-size: 26px;
+  --font-header-size: 64px;
   --font-weight: 400;
 }
 
 body{
 
     background-color: var(--brand-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: #ffff;
 }
 
 .container-logo{
@@ -22,9 +29,16 @@ body{
   /* height: 700px; */
   padding-top: 100px;
   margin: 0 auto;
+  margin-bottom: 200px;
 } 
 
-
+/* layout */
+.container{
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
 
 /* ***************************** */
 /* Анимация ЛОГО */
@@ -123,7 +137,11 @@ body{
     }
 }
 /* ***************************** */
+/* ***************************** */
+/* ***************************** */
 
+
+/* Main LOGO */
 .fisrt__line{
     display: flex;
     justify-content: center;
@@ -135,3 +153,168 @@ body{
     justify-content: center;
     /* gap: 30px; */
 } 
+
+/* ***************************** */
+/* ***************************** */
+/* ***************************** */
+
+/* header */
+
+.page-header {
+   
+    
+}
+
+.shadow{
+    box-shadow: 0px 12px 200px 250px  #3cf ;
+    /* #f39 pink +- + */
+    /* #6ff blue +- -*/
+    /* #6cf blue +- + более строгий*/
+    /* #f39 pink +- - лчший пинк*/
+    /* #c33 pink +- - темный официальный темный*/
+    /* #3cf blue +  +возможно идеал */
+}
+
+.page-header__row {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-header__nav
+{
+
+}
+
+.page-header__menu{
+
+    list-style: none;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ***************************** */
+/* ***************************** */
+/* ***************************** */
+
+/* info */
+
+.info{
+    
+}
+
+.info__header{
+
+    text-align: center;
+    font-size: var(--font-header-size);
+    margin: 30px;
+    
+}
+
+/* .shadow-info{
+    box-shadow: 0px 12px 100px 50px  #f39 ;
+} */
+
+.info-table{
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+    gap: 50px;
+    margin-top: 150px;
+    
+    justify-items: center;
+}
+
+.info__card-online{
+
+    /* background-color: #552CDF; */
+    border-radius: 40px;
+    text-align: center;
+    max-width: 400px;
+    padding: 15px;
+    box-shadow: 0px 12px 30px 5px #f39;
+}
+
+.info__card-online2{
+
+    /* background-color: #552CDF; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    padding: 15px;
+    /* box-shadow: 0px 12px 30px 5px #f39; */
+    
+    
+    
+}
+
+.info__card-online2-inside{
+    background-image:  url("./images/UnityBigBackground.webp");
+    background-size: cover;
+    min-width: 400px;
+    min-height: 200px;
+    border-radius: 40px;
+    transform: rotate(-7deg);
+}
+
+.info__card-zenject{
+
+    grid-row-start: 2 ;
+    grid-column-start: 2;
+    
+    
+    /* background-color: #552CDF; */
+    border-radius: 40px;
+    text-align: center;
+    max-width: 400px;
+    padding: 15px;
+    box-shadow: 0px 12px 30px 5px #f39;
+}
+
+.info__card-pattern{
+    grid-column-start: 1;
+    grid-row-start: 3 ;
+    
+    
+    /* background-color: #552CDF; */
+    border-radius: 40px;
+    text-align: center;
+    max-width: 400px;
+    padding: 15px;
+    box-shadow: 0px 12px 30px 5px #f39;
+}
+
+.info__card-videos{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    
+    
+    /* background-color: #552CDF; */
+    border-radius: 40px;
+    text-align: center;
+    max-width: 400px;
+    padding: 15px;
+    box-shadow: 0px 12px 30px 5px #f39;
+}
+
+.card__title{
+
+    padding: 20px;
+}
+
+.card__text{
+
+    text-align: center ;
+}
+
+/* ***************************** */
+/* ***************************** */
+/* ***************************** */
