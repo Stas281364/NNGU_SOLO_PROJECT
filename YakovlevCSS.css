@@ -7,10 +7,14 @@
 
     /* font */
   --font-family: "Alata", sans-serif;
+  --font-family-russo: "Russo one", sans-serif;
   --font-size: 26px;
   --font-header-size: 64px;
   --font-weight: 400;
 }
+
+/*Убрать полосу прокрутки для всей страницы*/
+
 
 body{
 
@@ -19,6 +23,8 @@ body{
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     color: #ffff;
+
+    
 }
 
 .container-logo{
@@ -29,7 +35,7 @@ body{
   /* height: 700px; */
   padding-top: 100px;
   margin: 0 auto;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 } 
 
 /* layout */
@@ -40,7 +46,42 @@ body{
     margin: 0 auto;
 }
 
+/* СКРОЛЛ */
+::-webkit-scrollbar {
+    width: 0;
+    
+}
+
+#kryesore::-webkit-scrollbar{
+    width: 7px;
+    background-color: yellow;
+}
+
+#kryesore::-webkit-scrollbar-thumb {
+   
+    background-color: red;
+}
+
+/* #element {
+    
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--brand-color);
+}
+
+::-webkit-scrollbar-thumb {
+   
+    background-color: #223c50;
+}
+ */
+
 /* ***************************** */
+/* ***************************** */
+/* ***************************** */
+
+
 /* Анимация ЛОГО */
 .logo{
     animation: logo__anime 5s ease forwards;
@@ -162,7 +203,7 @@ body{
 
 .page-header {
    
-    
+   font-family: var(--font-family-russo); 
 }
 
 .shadow{
@@ -212,6 +253,7 @@ body{
     text-align: center;
     font-size: var(--font-header-size);
     margin: 30px;
+    font-family: var(--font-family-russo);
     
 }
 
@@ -231,13 +273,15 @@ body{
     justify-items: center;
 }
 
+/* ////// */
+
 .info__card-online{
 
     /* background-color: #552CDF; */
     border-radius: 40px;
     text-align: center;
     max-width: 400px;
-    padding: 15px;
+    padding: 35px;
     box-shadow: 0px 12px 30px 5px #f39;
 }
 
@@ -265,6 +309,8 @@ body{
     transform: rotate(-7deg);
 }
 
+/* ////// */
+
 .info__card-zenject{
 
     grid-row-start: 2 ;
@@ -275,9 +321,31 @@ body{
     border-radius: 40px;
     text-align: center;
     max-width: 400px;
-    padding: 15px;
+    padding: 35px;
     box-shadow: 0px 12px 30px 5px #f39;
 }
+
+.info__card-zenject2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.info__card-zenject2-inside{
+
+    background-image:  url("./images/Zenject_bw.jpg");
+    background-size: cover;
+    min-width: 400px;
+    min-height: 280px;
+    border-radius: 40px;
+    transform: rotate(9deg);
+}
+
+/* ////// */
 
 .info__card-pattern{
     grid-column-start: 1;
@@ -288,9 +356,32 @@ body{
     border-radius: 40px;
     text-align: center;
     max-width: 400px;
-    padding: 15px;
+    padding: 35px;
     box-shadow: 0px 12px 30px 5px #f39;
 }
+
+.info__card-pattern2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    padding: 15px;
+
+}
+
+.info__card-pattern2-inside{
+    background-image:  url("./images/abstract-factory-ru.png");
+    background-size: cover;
+    min-width: 430px;
+    min-height: 280px;
+    border-radius: 40px;
+    transform: rotate(-3deg);
+}
+
+/* ////// */
+
 
 .info__card-videos{
     grid-column-start: 2;
@@ -301,12 +392,33 @@ body{
     border-radius: 40px;
     text-align: center;
     max-width: 400px;
-    padding: 15px;
+    padding: 35px;
     box-shadow: 0px 12px 30px 5px #f39;
 }
 
+.info__card-videos2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.info__card-videos2-inside{
+    background-image:  url("./images/VideosFrame.png");
+    background-size: cover;
+    min-width: 430px;
+    min-height: 280px;
+    border-radius: 40px;
+    transform: rotate(3deg);
+}
+
+/* ////// */
+
 .card__title{
 
+    font-family: var(--font-family-russo);
     padding: 20px;
 }
 
